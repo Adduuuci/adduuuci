@@ -1,0 +1,31 @@
+Amazon: 
+Using ProPublic's data that examines Amazon's shopping algorithm, I will be analyzing the cost of products that were sold by Amazon versus vendors, the displayed price versus the total cost (plus shipping), and analyzing "Fullfilled by Amazon" to determine if it actually saves consumer's money.
+ 
+For this, I will look at the displayed price versus the displayed price + shipping to understand the variance between the 2 to determine if consumers are being deceived. 
+
+Approach: 
+-	Compare Amazon's display price versus the total cost (which includes shipping) to find the average variance between the 2
+o	Segment by price rank of products (expensive vs less expensive) to remove outliers
+-	Determine the average shipping cost 
+o	Segment by price rank of products (expensive vs less expensive) to remove outliers
+-	Create a linear regression model comparing cost displayed versus total cost (plus shipping)
+-	Compare "Fulfilled by Amazon" (free shipping) versus average vendor's prices to determine if Amazon's price is increased to cover shipping 
+-	Determine if Amazon really is the cheapest option compared to other vendors 
+-	If available, look at the product displayed ranking order to determine if Amazon's algorithm is actually displaying the best deals 
+ 
+
+InstaCart: 
+Using InstaCart's database, I will be analyzing product purchases to determine if there is an algorithm based on timing, brand names, quantity of products purchased, as well as overall top purchased products and their average price. 
+
+Approach: 
+-	Sort by price rank - expensive products versus least expensive to determine if price correlates to purchases 
+-	Determine if the time of day correlates to an increase in sales (morning, mid-afternoon, evening). Similarly, look at the days of the week to understand what days consumers are more likely to make purchases
+-	Compare perishable items, such as fruits and vegetables, to understand if they are less likely to be purchased through an online site
+-	If possible, compare household brand names versus generic to determine if customers are more likely to purchase a well-known brand or if they are purchasing the least expensive products
+-	Compare if consumers are more likely to shop in bulk or purchase only 1 item for each product
+-	If possible, look at deals and discounts 
+-	If there is a holiday within the data, create models to show if online purchasers are more likely to procrastinate or if they are planners by looking at the days leading up to the holiday 
+
+Problems: 
+-	If multiple products were purchased, there is no retailer ID (is it possible to determine if items were purchased through bulk?) 
+-	Determining brand names within the product names column
